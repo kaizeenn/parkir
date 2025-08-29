@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Superadmin Dashboard</title>
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Selamat datang, <%= user.nama %> (Superadmin)</h1>
+    <p>Ini adalah halaman dashboard untuk superadmin.</p>
+    <ul>
+        <li><a href="/superadmin/revenue">Lihat Pendapatan</a></li>
+        <li><a href="/superadmin/users">Kelola Akun User</a></li>
+        <li><a href="/superadmin/tarif">Kelola Tarif</a></li>
+        <li><a href="/superadmin/pengunjung/add">Tambah Pengunjung</a></li>
+        <li><a href="/superadmin/kendaraan/add">Tambah Kendaraan</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+    </ul>
+</body>
+</html>

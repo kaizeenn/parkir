@@ -37,7 +37,14 @@ app.use((req, res, next) => {
 const usersRoute = require('./routes/users');  
 const indexRoute = require('./routes/index'); 
 const kendaraanRoute = require('./routes/kendaraan');
+const authRoute = require('./routes/auth');
+const adminRoute = require('./routes/admin');
+const superadminRoute = require('./routes/superadmin');
+
 app.use('/kendaraan', kendaraanRoute);
+app.use('/auth', authRoute);
+app.use('/admin', adminRoute);
+app.use('/superadmin', superadminRoute);
 app.use('/', indexRoute);
 app.use('/users', usersRoute);
 

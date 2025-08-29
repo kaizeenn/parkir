@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Selamat datang, <%= user.nama %> (Admin)</h1>
+    <p>Ini adalah halaman dashboard untuk admin.</p>
+    <ul>
+        <li><a href="/admin/pengunjung/add">Tambah Pengunjung</a></li>
+        <li><a href="/admin/kendaraan/add">Tambah Kendaraan</a></li>
+        <li><a href="/admin/change-password">Ganti Password</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+    </ul>
+</body>
+</html>
